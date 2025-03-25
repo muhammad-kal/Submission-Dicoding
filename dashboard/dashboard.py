@@ -55,7 +55,7 @@ df_day = pd.read_csv('./dashboard/day.csv')
 df_hour = pd.read_csv('./dashboard/hour.csv')
  
 with st.sidebar:
-    st.image("logo.png")
+    st.image("./dashboard/logo.png")
     
     year_selected = st.sidebar.selectbox("Pilih Rentang Penyewaan", ['2011', '2012', '2011-2012'])
 
