@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
 import matplotlib.ticker as ticker
-
+from babel.numbers import format_currency
 sns.set(style='dark')
 
 def create_tren_by_season(df):
@@ -176,7 +176,7 @@ with col1 :
         peminjaman_tiap_jam = create_peminjaman_tiap_jam_2012(df_hour)
     else:
         peminjaman_tiap_jam = create_peminjaman_tiap_jam_2011_2012(df_hour)
-
+        
     filtered_df_sorted = peminjaman_tiap_jam.sort_values(by="cnt", ascending=False)
     st.write("🏆 Top Penyewaan Sepeda Berdasarkan Jam")
 
