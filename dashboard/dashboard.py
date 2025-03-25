@@ -51,8 +51,8 @@ def create_peminjaman_tiap_jam(df):
     return peminjaman_tiap_jam
 
 
-df_day = pd.read_csv('day.csv')
-df_hour = pd.read_csv('hour.csv')
+df_day = pd.read_csv('./dashboard/day.csv')
+df_hour = pd.read_csv('./dashboard/hour.csv')
  
 with st.sidebar:
     st.image("logo.png")
